@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор QR кодов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+
+</head>
+<body>
+    <section>
+        <h1>Генератор QR кодов</h1>
+        <p class="descr">В&nbsp;поле ниже вставьте адрес вашего сайта, нажмите кнопку &laquo;Сгенерировать&raquo;, после чего ниже появится QR-код. Вы&nbsp;можете скопировать его или сохранить, нажав по&nbsp;нему правой кнопкой мыши и&nbsp;выбрав соответствующий пункт меню.</p>
+    </section>
+
+    <section class="form">
+        <input type="url" name="url" placeholder="https://skillbox.ru/">
+        <button>Сгенерировать</button>
+    </section>
+
+    <section>
+        <div class="error-message"></div>
+        <hr>
+    </section>
+
+    <section class="qrcode-container">
+        <div id="qrcode"></div>
+    </section>
+
+</body>
+</html>
